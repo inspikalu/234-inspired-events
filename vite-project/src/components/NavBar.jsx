@@ -12,20 +12,22 @@ function NavBar() {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/about'>About Us</Link>
+                    <Link to='/services'>Services</Link>
                 </li>
                 <li>
-                    <Link to='/services'>Services</Link>
+                    <Link to='/about'>About Us</Link>
                 </li>
                 <li>
                     <Link to='/gallery'>Gallery</Link>
                 </li>
                 <li>
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact'>Contact Us</Link>
                 </li>
             </ul>
 
-            <button className='navbar-btn'>Book A Call</button>
+            <Link to='/'>
+                <button className='btn'>Book A Call</button>
+            </Link>
         </header>
     );
 }
