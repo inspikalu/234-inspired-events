@@ -14,14 +14,12 @@
 .navbar ul{
     display: flex;
     flex-direction: row; 
-      
 }
 
 .navbar ul li{
     list-style: none;
     margin-left: 20px;
     font-size: 25px;
-    
 }
 
 .navbar-btn{
@@ -31,5 +29,4 @@
     font-size: 20px;
     border-radius: 6px;
     color: #008000;
-
 }
