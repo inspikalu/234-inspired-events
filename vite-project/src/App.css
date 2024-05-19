@@ -224,6 +224,34 @@
     color: #008000;
 }
 
+.bodyFooter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #6666FF;
+    color: white;
+}
+.bodyFooter > *{
+    align-self: flex-start;
+}
+.bodyFooter ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    padding-block: 10px;
+}
+.bodyFooter ul>li>a{
+    color: white;
+}
+.bodyFooter > .socials>ul{
+    flex-direction: row;
+    gap: 10px;
+}
+
 
 .headerRedText {
     display: block;
@@ -393,9 +421,11 @@ form>textarea {
     border: 2px solid #9999ff;
     border-radius: 5px;
 }
-form > label{
+
+form>label {
     font-weight: bold;
 }
+
 form>textarea {
     resize: none;
     height: 12rem !important;
@@ -439,4 +469,63 @@ form>button {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.contactFooter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: safe;
+    align-items: center;
+    background-color: #e9f5e9;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.contactFooter>.leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.contactFooter>.leftSide h2 {
+    color: #0000ff;
+}
+
+.contactFooter>.leftSide>div>p {
+    margin-block: .5rem;
+}
+
+.contactFooter>.leftSide>div>p>span {
+    margin-inline-end: 10px;
+}
+
+.contactFooter>.leftSide>div>p>span>a {
+    color: #A1A1A1;
+}
+
+.contactFooter>.leftSide>div>ul {
+    list-style-type: none;
+}
+
+.contactFooter>.leftSide>div>ul>li>a {
+    display: flex;
+    align-items: center;
+    color: #A1A1A1;
+    gap: 1rem;
+    margin-block: .8rem;
+}
+
+.contactFooter>.leftSide>div>ul>li>a>img {
+    aspect-ratio: 1/1;
+    width: 15px;
+}
+
+.contactFooter>.rightSide>span {
+    display: inline-block;
+    font-size: 4rem;
+    font-family: "Petit Formal Script", cursive;
+    color: #242F65;
+    max-width: 10ch;
+    text-align: center;
 }

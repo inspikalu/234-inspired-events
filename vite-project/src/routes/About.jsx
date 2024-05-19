@@ -1,5 +1,6 @@
 import HeroImg2 from '../components/HeroImg2';
 import NavBar from '../components/NavBar';
+import Footer from "../components/Footer"
 import IntroImg from '/about.webp';
 import PhoneImg from '../assets/phone.svg'
 import Line from "../assets/Vector-1.svg"
@@ -52,6 +53,8 @@ const About = () => {
         <div className="line line3"></div>
         <div className="line line4"></div>
       </footer>
+
+      <Footer />
     </>
   )
 }
